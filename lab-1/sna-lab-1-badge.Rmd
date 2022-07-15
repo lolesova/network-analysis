@@ -1,7 +1,7 @@
 ---
 title: 'Intro to SNA Badge'
 subtitle: "LASER Institute SNA Learning Lab 1"
-author: "Dr. Shaun Kellogg"
+author: "Larisa Olesova"
 date: "`r format(Sys.Date(),'%B %e, %Y')`"
 output: html_document
 ---
@@ -26,41 +26,43 @@ Use the institutional library (e.g. [NCSU Library](https://www.lib.ncsu.edu/#art
 
 1.  Provide an APA citation for your selected study.
 
-    -   
+de Laat, M., Lally, V., Lipponen, L. et al. Investigating patterns of interaction in networked learning and computer-supported collaborative learning: A role for Social Network Analysis. Computer Supported Learning 2, 87–103 (2007). https://doi.org/10.1007/s11412-007-9006-4
 
 2.  Who are the network's actors and how are they represented visually?
 
-    -   
+    -   Students in an online course and one tutor, sociogram (circles with letters)
 
 3.  What ties connect these actors and how are they represented visually?
 
-    -   
+    -   Behaviorial interaction, sociogram (lines with arrows)
 
 4.  Why were these relations of interest to the researcher?
 
-    -   
+    -   Dynamics of changes in members' behavior during collaborative project over time
 
 5.  Finally, what makes this collection of actors a social network?
 
-    -   
+    -   Collaborative project
 
 Draft a research question for a population you may be interested in studying, or that would be of interest to educational researchers, and that would require the collection of relational data and answer the following questions:
 
+How are interaction patterns different between high and low interaction students in case-based discussions?
+
 1.  What relational data would need to be collected?
 
-    -   
+    -   Students posts in online discussions
 
 2.  For what reason would relational data need to be collected in order to address this question?
 
-    -   
+    -   To get insight into how low interaction students behave in social network.
 
 3.  Explain the analytical level at which these data would need to be collected and analyzed.
 
-    -   
+    -   Centrality and density will be analyzed for high and low interactions; edge list will be created with edge attributes to understand low interaction students
 
 4.  How does this differ from the ways in which individual or group behavior is typically conceptualized and modeled in conventional educational research?
 
-    -   
+    -   this will show low interaction students positions within the socila network
 
 ### Part II: Data Product
 
