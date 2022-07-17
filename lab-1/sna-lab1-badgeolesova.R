@@ -1,4 +1,4 @@
-# install.packages(readxl)
+install.packages(readxl)
 library(readxl)
 install.packages("tidyverse")
 library(tidyverse)
@@ -6,13 +6,10 @@ install.packages("tidygraph")
 library(tidygraph)
 install.packages("ggraph")
 library(ggraph)
- 
- 
 
- 
 library(readxl)
 student_edges <- read_excel("data/pim_edges.xlsx", 
-                              col_names = FALSE)
+                            col_names = FALSE)
 student_edges
 rownames(student_edges) <- 1:26
 
@@ -44,4 +41,3 @@ autograph(student_network)
 autograph(student_network,
           node_label = id,
           node_colour = interaction)
- 
