@@ -72,8 +72,7 @@ Using one of the data sets provided in your data folder, **your goal for this la
 
 I highly recommend creating a new R script in your lab-1 folder to complete this task. When your code is ready to share, use the code chunk below to share the final code for your model and answer the questions that follow.
 
-```{r, my-data-product}
-# YOUR FINAL CODE HERE
+
 # # install.packages(readxl)
 library(readxl)
 install.packages("tidyverse")
