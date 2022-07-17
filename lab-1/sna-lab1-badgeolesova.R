@@ -7,22 +7,9 @@ library(tidygraph)
 install.packages("ggraph")
 library(ggraph)
  
-student_nodes <- read_excel("data/pim_nodes.xlsx"),col_names = FALSE)
-student_edges <- read_excel("data/pim_edges.xlsx")
-view(student_edges)
-view(student_nodes)
-student_edges <- read_excel("data/student-reported-friends.xlsx")
-view(student_edges)
+ 
 
-install.packages("tidyverse")
-library(tidyverse)
-install.packages("tidygraph")
-library(tidygraph)
-install.packages("ggraph")
-library(ggraph)
-student_network <- tbl_graph(edges = student_edges,
-                             nodes = student_nodes, 
-                             directed = TRUE)
+ 
 library(readxl)
 student_edges <- read_excel("data/pim_edges.xlsx", 
                               col_names = FALSE)
@@ -57,6 +44,4 @@ autograph(student_network)
 autograph(student_network,
           node_label = id,
           node_colour = interaction)
-install.packages("ggraph")
-library(ggraph)
-ggraph(student_network)
+ 
