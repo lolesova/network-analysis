@@ -74,6 +74,51 @@ I highly recommend creating a new R script in your lab-1 folder to complete this
 
 ```{r, my-data-product}
 # YOUR FINAL CODE HERE
+# # install.packages(readxl)
+library(readxl)
+install.packages("tidyverse")
+library(tidyverse)
+install.packages("tidygraph")
+library(tidygraph)
+install.packages("ggraph")
+library(ggraph)
+ 
+library(readxl)
+student_edges <- read_excel("data/pim_edges.xlsx", 
+                              col_names = FALSE)
+student_edges
+rownames(student_edges) <- 1:26
+
+colnames(student_edges) <- 1:26
+student_edges
+student_nodes <- read_excel("data/pim_nodes.xlsx")
+student_nodes
+student_matrix <- as.matrix(student_edges)
+class(student_edges)
+
+class(student_matrix)
+
+student_network <- as_tbl_graph(student_matrix, 
+                                directed = TRUE)
+student_network
+student_edges <- student_network |>
+  activate(edges) |>
+  as_tibble()
+
+student_edges
+?tbl_graph
+student_network <- tbl_graph(edges = student_edges, # specifies edges
+                             nodes = student_nodes, # specifies nodes
+                             directed = TRUE) # specifies directionality
+
+student_network
+plot(student_network)
+autograph(student_network)
+autograph(student_network,
+          node_label = id,
+          node_colour = interaction)
+ 
+ 
 
 
 ```
